@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cafe Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cafe Shop</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="home" class="hero">
+       
+        <h2>Welcome to Our Cozy Cafe</h2>
+    </section>
+
+    
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <div class="box">
+                <img src="coffee.webp" alt="Coffee">
+                <h3>Coffee</h3>
+                <p>Rich and aromatic blends.</p>
+            </div>
+            <div class="box">
+                <img src="pastries.jpg" alt="Pastries">
+                <h3>Pastries</h3>
+                <p>Freshly baked delicious treats.</p>
+            </div>
+            <div class="box">
+                <img src="tea.jpg" alt="Tea">
+                <h3>Tea</h3>
+                <p>Refreshing and soothing varieties.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
